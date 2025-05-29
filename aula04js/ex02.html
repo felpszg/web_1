@@ -1,25 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CADASTRO</title>
-    
+    <title>Calculadora</title>
+    <script src="script.js" defer></script>
 </head>
-<body>
-    <form id="saudacao">
-        <label for="nome">
-            NOME:<input type="text" name="nome" id="">
-        </label>
-    <br>
-        <label for="idade">
-            IDADE:<input type="number" name="idade" id="" min="0" max="100">
-        </label>
-    </form>
-    <button type="submit">ENVIAR</button>
-    
-    <div id="resultado">
 
+<body>
+    <h1>Calculadora Simples</h1>
+
+    <form id="formCalculadora">
+        <div>
+            <label for="valor1">
+                Valor 1: <input type="number" id="valor1" placeholder="Digite um valor">
+            </label>
+        </div>
+
+        <div>
+            <label for="valor2">
+                Valor 2: <input type="number" id="valor2" placeholder="Digite um valor">
+            </label>
+        </div>
+
+        <input type="button" value="Enviar" onclick="calcular()">
+    </form>
+
+    <div>
+        <h2>Resultados</h2>
+        <label for="soma">
+            Soma: <input type="text" id="soma" value="0" readonly>
+        </label>
+        <br><br>
+        <label for="sub">
+            Subtração: <input type="text" id="sub" value="0" readonly>
+        </label>
+        <br><br>
+        <label for="divisao">
+            Divisão: <input type="text" id="divisao" value="0" readonly>
+        </label>
+        <br><br>
+        <label for="mult">
+            Multiplicação: <input type="text" id="mult" value="0" readonly>
+        </label>
     </div>
 </body>
+
 </html>

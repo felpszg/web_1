@@ -1,15 +1,15 @@
-const soma = function(a,b){
+
+const soma = function (a, b){
     return a + b;
 }
-console.log (soma(5,9));
 
+console.log(soma(3,-8));
 
 const pessoa = {
-    nome: "felipe",
-    idade: 18,
-    email: "grayy.fefe@gmail.com",
+    nome: "Rafael",
+    idade: 34,
     saudar: function(){
-    return "Oi, meu nome  "+this.nome+" e esse é meu email:"+this.email+ ".";
+        return `Oi meu nome é ${this.nome}, e eu tenho ${this.idade} anos de idade.`;
     }
 }
 
